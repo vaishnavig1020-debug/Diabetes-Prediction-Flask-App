@@ -27,16 +27,16 @@ http://127.0.0.1:5000/
 ## 📸 Application Screenshots
 
 ### 🏠 Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/home.PNG)
 
 ### 🧪 Diabetes Prediction Form
-![Prediction Form](screenshots/prediction_form.png)
+![Prediction Form](screenshots/prediction_form.PNG)
 
 ### ⚠️ Symptoms Page
-![Symptoms](screenshots/symptoms.png)
+![Symptoms](screenshots/symptoms.PNG)
 
 ### 🛡️ Prevention Tips Page
-![Prevention](screenshots/prevention.png)
+![Prevention](screenshots/prevention.PNG)
 
 
 ## ⚠️ Disclaimer
