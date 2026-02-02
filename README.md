@@ -24,5 +24,20 @@ python app.py
 4. Open browser and go to  
 http://127.0.0.1:5000/
 
+## 📸 Application Screenshots
+
+### 🏠 Home Page
+![Home Page](screenshots/home.png)
+
+### 🧪 Diabetes Prediction Form
+![Prediction Form](screenshots/prediction_form.png)
+
+### ⚠️ Symptoms Page
+![Symptoms](screenshots/symptoms.png)
+
+### 🛡️ Prevention Tips Page
+![Prevention](screenshots/prevention.png)
+
+
 ## ⚠️ Disclaimer
 This tool is for educational purposes only and does not replace professional medical advice.
