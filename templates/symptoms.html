@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Symptoms</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Page-specific CSS -->
+    <style>
+        .dashboard {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .dashboard h1 {
+            text-align: center;
+            color: #0d47a1;
+            margin-bottom: 40px;
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        /* Card (Same style as Welcome Page) */
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 35px rgba(0, 123, 255, 0.18);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .note {
+            margin-top: 40px;
+            background: #e3f2fd;
+            padding: 20px;
+            border-left: 6px solid #0d47a1;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #0d47a1;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: #08306b;
+        }
+    </style>
+</head>
+
+<body class="symptoms-page">
+
+<div class="dashboard">
+
+    <h1>🩺 Diabetes Symptoms</h1>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <div class="icon">🚰</div>
+            <h3>Frequent Urination</h3>
+            <p>Excess glucose causes kidneys to work harder, leading to frequent urination.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🥤</div>
+            <h3>Excessive Thirst</h3>
+            <p>Fluid loss from frequent urination increases thirst.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon" style="color:#fb8c00;">🍽</div>
+            <h3>Increased Hunger</h3>
+            <p>Body cells don’t get enough glucose, making you feel hungry.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon" style="color:#26a69a;" >⚖</div>
+            <h3>Weight Loss</h3>
+            <p>Body burns fat and muscle for energy due to insulin issues.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">😴</div>
+            <h3>Fatigue</h3>
+            <p>Low glucose absorption causes constant tiredness.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👀</div>
+            <h3>Blurred Vision</h3>
+            <p>High sugar levels affect fluid levels in the eyes.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🩹</div>
+            <h3>Slow Healing</h3>
+            <p>Reduced blood flow delays wound healing.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤚</div>
+            <h3>Numbness</h3>
+            <p>Nerve damage causes tingling in hands and feet.</p>
+        </div>
+
+    </div>
+
+    <div class="early-detection">
+        <span class="alert-icon">🩸</span>
+        <strong>Early Detection:</strong>
+        Identifying these symptoms early can prevent severe complications.
+        Always consult a medical professional for diagnosis.
+    </div>
+
+    <div style="text-align:center;">
+        <a href="/" class="btn-back">⬅ Back to Dashboard</a>
+    </div>
+
+</div>
+
+</body>
+</html>

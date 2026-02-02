@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prevention Tips</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+
+            background: linear-gradient(
+                180deg,
+                #f9fcff 0%,
+                #eef5ff 50%,
+                #f9fcff 100%
+            );
+        }
+
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+            margin-top: 40px;
+            margin-bottom: 35px;
+            font-size: 30px;
+        }
+
+        .tips-grid {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            padding: 0 25px;
+        }
+
+        .tip-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 22px 18px;
+            text-align: center;
+             min-height: 190px;      
+             max-width: 230px;       
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 35px rgba(25, 135, 84, 0.25);
+        }
+
+        .tip-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .tip-title {
+            font-weight: 600;
+            color: #198754;
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        .tip-desc {
+            font-size: 13.5px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Prevention Alert (Same as Symptoms – Green Version) */
+        .prevention-alert {
+            max-width: 900px;
+            margin: 40px auto 20px;
+            padding: 16px 22px;
+
+            background: linear-gradient(
+                90deg,
+                #e9f9f1,
+                #f5fffa
+            );
+
+            border-left: 6px solid #198754;
+            border-radius: 12px;
+
+            color: #0f5132;
+            font-size: 14.5px;
+            line-height: 1.6;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            box-shadow: 0 8px 20px rgba(25, 135, 84, 0.18);
+        }
+
+        .prevention-alert:hover {
+            box-shadow: 0 12px 28px rgba(25, 135, 84, 0.28);
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 45px;
+            padding: 10px 22px;
+
+            background: #0d47a1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 15px;
+
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #08306b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🛡️ Diabetes Prevention Tips</h1>
+
+    <div class="tips-grid">
+
+        <div class="tip-card">
+            <div class="tip-icon">⚖️</div>
+            <div class="tip-title">Healthy Weight</div>
+            <div class="tip-desc">
+                Maintaining a healthy body weight reduces insulin resistance.
+            </div>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon">🥗</div>
+            <div class="tip-title">Balanced Diet</div>
+            <div class="tip-desc">
+                Eat vegetables, fruits, whole grains, and lean proteins daily.
+            </div>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon">🏃‍♂️</div>
+            <div class="tip-title">Regular Exercise</div>
+            <div class="tip-desc">
+                Physical activity improves blood sugar control and metabolism.
+            </div>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon">🍬</div>
+            <div class="tip-title">Reduce Sugar</div>
+            <div class="tip-desc">
+                Limit sugary drinks and refined carbohydrates.
+            </div>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon">💧</div>
+            <div class="tip-title">Stay Hydrated</div>
+            <div class="tip-desc">
+                Drinking water helps regulate blood sugar levels.
+            </div>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon">🩺</div>
+            <div class="tip-title">Health Checkups</div>
+            <div class="tip-desc">
+                Regular checkups help detect risks early.
+            </div>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon">🚭</div>
+            <div class="tip-title">Quit Smoking</div>
+            <div class="tip-desc">
+                Smoking increases insulin resistance and complications.
+            </div>
+        </div>
+
+        <div class="tip-card">
+            <div class="tip-icon">🧘‍♀️</div>
+            <div class="tip-title">Manage Stress</div>
+            <div class="tip-desc">
+                Stress affects blood sugar; relaxation improves control.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="prevention-alert">
+        <span>🛡️</span>
+        <strong>Prevention Tip:</strong>
+        A healthy lifestyle and regular monitoring can significantly reduce
+        the risk of developing diabetes. Always follow medical advice.
+    </div>
+
+    <a href="/" class="back-btn">← Back to Dashboard</a>
+
+</body>
+</html>
