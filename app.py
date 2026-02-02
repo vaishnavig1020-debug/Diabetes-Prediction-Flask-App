@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Load model
 model = pickle.load(open("diabetes_predictor.pkl", "rb"))
-scaler = pickle.load(open("scalar.pkl", "rb"))  # If using scaler
+scaler = pickle.load(open("scaler.pkl", "rb"))  # If using scaler
 
 @app.route("/")
 def welcome():
@@ -40,3 +40,4 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
